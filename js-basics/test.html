@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid red;
+        /* justify-content: center; */
+        /* gap: 30px; */
+        height: 100px;
+      }
+      .container .child {
+        display: inline-block;
+        border: 1px solid blue;
+        /* width: 100px; */
+      }
+      .container .num1 {
+        width: 100px;
+      }
+      .container .num2,
+      .container .num3 {
+        flex: 1;
+      }
+      /* total: 3
+          each element takes 1/3
+      */
+      /* total: 4
+          teena takes 2/4
+          juan takes 1/4
+          wilson takes 1/4
+      */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="child num1">Teena</span>
+      <span class="child num2">Juan</span>
+      <span class="child num3">Wilson</span>
+    </div>
+  </body>
+</html>
